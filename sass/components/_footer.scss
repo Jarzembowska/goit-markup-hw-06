@@ -3,12 +3,16 @@
   height: 252px;
   background-color: $backgroundColor;
   color: $contactColorFooter;
-  &_left {
+
+  &-left {
     display: flex;
     flex-direction: row;
+    // justify-content: start;
+    align-items: left;
+    padding-left: 0px;
   }
 
-  .contact_box {
+  .contact-box {
     padding-top: 60px;
     .logo {
       margin: 0;
@@ -26,18 +30,21 @@
         color: $contactLogoColor;
       }
     }
-    .footer_contact {
+    .footer-contact {
       margin-top: 20px;
       font-style: normal;
+
       .item {
+        width: auto;
         font-size: 14px;
-        line-height: 1.68;
-        letter-spacing: 0.05em;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
         &:not(:last-child) {
           margin-bottom: 9px;
         }
       }
       .address {
+        letter-spacing: 0.01rem;
         color: $contactLogoColor;
       }
       .link {
@@ -53,9 +60,10 @@
       }
     }
   }
-  .social_card_footer {
+  .social-card-footer {
     margin-left: 70px;
-    &_title {
+    // margin-right: 0px;
+    &-title {
       padding-top: 72px;
       font-weight: 700;
       font-size: 14px;
@@ -64,15 +72,14 @@
       text-transform: uppercase;
       color: $contactLogoColor;
     }
-    &_list {
+    &-list {
       display: inline-flex;
-      margin: 0;
       padding-top: 20px;
       width: 100%;
-      &_element {
+      &-element {
         display: inline-flex;
 
-        &_icon {
+        &-icon {
           display: inline-flex;
           justify-content: center;
           align-items: center;
@@ -91,6 +98,79 @@
             background: $accentColor;
             fill: $contactLogoColor;
           }
+        }
+      }
+    }
+  }
+  .subscribe-to-the-newsletter {
+    margin-left: 78px;
+    &-title {
+      padding-top: 72px;
+      padding-bottom: 20px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: $colorSubscribeNewsletterTitle;
+    }
+    &-label {
+      display: inline-flex;
+      gap: 14px;
+
+      &-email {
+        width: 358px;
+        height: 50px;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        background-color: $backgroundColorSubscribeNewsletterEmail;
+        border: 1px solid $colorSubscribeNewsletterBorderEmail;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        padding-left: 16px;
+        transition-property: background-color, border, filter, border-radius;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:focus {
+          background-color: $backgroundColorSubscribeNewsletterEmail;
+          border: 1px solid $colorSubscribeNewsletterBorderEmail;
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+          border-radius: 5px;
+        }
+      }
+      &-save {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 200px;
+        height: 50px;
+        background-color: $backgroundColorSubscribeNewsletterButtonSave;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border: none;
+        color: $colorSubscribeNewsletterButtonSave;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        letter-spacing: 0.06em;
+        cursor: pointer;
+        transition-property: border-radius, background-color, fill, color,
+          box-shadow;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        svg {
+          margin-left: 24px;
+          fill: $colorSubscribeNewsletterButtonSave;
+        }
+
+        &:focus {
+          border-radius: 5px;
+          background-color: $backgroundColorSubscribeNewsletterButtonSave;
+          color: $colorSubscribeNewsletterButtonSave;
+          fill: $colorSubscribeNewsletterButtonSave;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         }
       }
     }
