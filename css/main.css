@@ -61,7 +61,8 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav a:hover, .nav a:focus {
+.nav a:hover,
+.nav a:focus {
   color: #2196f3;
 }
 .nav .current_page {
@@ -99,7 +100,8 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contact_item_link:hover, .contact_item_link:focus {
+.contact_item_link:hover,
+.contact_item_link:focus {
   color: #2196f3;
   fill: #2196f3;
 }
@@ -284,7 +286,8 @@
 .team .our_team figure {
   margin: 0;
   width: 270px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   display: inline-block;
   background-color: #fff;
@@ -341,7 +344,8 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team .our_team figure figcaption .social_card_list_element_icon:hover, .team .our_team figure figcaption .social_card_list_element_icon:focus {
+.team .our_team figure figcaption .social_card_list_element_icon:hover,
+.team .our_team figure figcaption .social_card_list_element_icon:focus {
   border-radius: 50%;
   background: #2196f3;
   fill: #fff;
@@ -376,10 +380,12 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.main_portfolio .main_nav_portfolio li .button_portfolio:hover, .main_portfolio .main_nav_portfolio li .button_portfolio:focus {
+.main_portfolio .main_nav_portfolio li .button_portfolio:hover,
+.main_portfolio .main_nav_portfolio li .button_portfolio:focus {
   background: #2196f3;
   color: #fff;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .main_portfolio .portfolio_list {
   margin-top: 50px;
@@ -404,7 +410,8 @@
   z-index: 1;
 }
 .main_portfolio .portfolio_list_box:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .main_portfolio .portfolio_list_box img {
   display: block;
@@ -512,7 +519,8 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer .contact-box .footer-contact .link:hover, .footer .contact-box .footer-contact .link:focus {
+.footer .contact-box .footer-contact .link:hover,
+.footer .contact-box .footer-contact .link:focus {
   color: #2196f3;
 }
 .footer .social-card-footer {
@@ -549,7 +557,8 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer .social-card-footer-list-element-icon:hover, .footer .social-card-footer-list-element-icon:focus {
+.footer .social-card-footer-list-element-icon:hover,
+.footer .social-card-footer-list-element-icon:focus {
   border-radius: 50%;
   background: #2196f3;
   fill: #fff;
@@ -655,7 +664,8 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.our_clients .clients_list .client_list_logo:hover, .our_clients .clients_list .client_list_logo:focus {
+.our_clients .clients_list .client_list_logo:hover,
+.our_clients .clients_list .client_list_logo:focus {
   border: 1px solid #2196f3;
   fill: #2196f3;
 }
@@ -671,23 +681,23 @@
 .modal_container.in .modal_space {
   background: rgba(0, 0, 0, 0);
   -webkit-animation: apperIn 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
-          animation: apperIn 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  animation: apperIn 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
 }
 .modal_container.in .modal_space .modal {
   -webkit-animation: slideIn 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
-          animation: slideIn 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  animation: slideIn 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
 }
 .modal_container.out {
   -webkit-animation: ScaleDown 0s 1s linear forwards;
-          animation: ScaleDown 0s 1s linear forwards;
+  animation: ScaleDown 0s 1s linear forwards;
 }
 .modal_container.out .modal_space {
   -webkit-animation: apperOut 1s cubic-bezier(0.23, 1, 0.32, 1) forwards;
-          animation: apperOut 1s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: apperOut 1s cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 .modal_container.out .modal_space .modal {
   -webkit-animation: slideOut 1s cubic-bezier(0.23, 1, 0.32, 1) forwards;
-          animation: slideOut 1s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: slideOut 1s cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
 .is_hidden {
@@ -710,10 +720,11 @@
   position: absolute;
   width: 528px;
   min-height: 581px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: #fff;
 }
-.modal_space .modal button[type=button] {
+.modal_space .modal button[type="button"] {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -847,4 +858,4 @@ p {
   width: 1200px;
   margin: auto;
   padding: 0 15px;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
