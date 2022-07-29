@@ -61,8 +61,7 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav a:hover,
-.nav a:focus {
+.nav a:hover, .nav a:focus {
   color: #2196f3;
 }
 .nav .current_page {
@@ -100,8 +99,7 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contact_item_link:hover,
-.contact_item_link:focus {
+.contact_item_link:hover, .contact_item_link:focus {
   color: #2196f3;
   fill: #2196f3;
 }
@@ -286,8 +284,7 @@
 .team .our_team figure {
   margin: 0;
   width: 270px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   display: inline-block;
   background-color: #fff;
@@ -344,8 +341,7 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team .our_team figure figcaption .social_card_list_element_icon:hover,
-.team .our_team figure figcaption .social_card_list_element_icon:focus {
+.team .our_team figure figcaption .social_card_list_element_icon:hover, .team .our_team figure figcaption .social_card_list_element_icon:focus {
   border-radius: 50%;
   background: #2196f3;
   fill: #fff;
@@ -380,12 +376,10 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.main_portfolio .main_nav_portfolio li .button_portfolio:hover,
-.main_portfolio .main_nav_portfolio li .button_portfolio:focus {
+.main_portfolio .main_nav_portfolio li .button_portfolio:hover, .main_portfolio .main_nav_portfolio li .button_portfolio:focus {
   background: #2196f3;
   color: #fff;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .main_portfolio .portfolio_list {
   margin-top: 50px;
@@ -410,8 +404,7 @@
   z-index: 1;
 }
 .main_portfolio .portfolio_list_box:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .main_portfolio .portfolio_list_box img {
   display: block;
@@ -519,8 +512,7 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer .contact-box .footer-contact .link:hover,
-.footer .contact-box .footer-contact .link:focus {
+.footer .contact-box .footer-contact .link:hover, .footer .contact-box .footer-contact .link:focus {
   color: #2196f3;
 }
 .footer .social-card-footer {
@@ -557,8 +549,7 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer .social-card-footer-list-element-icon:hover,
-.footer .social-card-footer-list-element-icon:focus {
+.footer .social-card-footer-list-element-icon:hover, .footer .social-card-footer-list-element-icon:focus {
   border-radius: 50%;
   background: #2196f3;
   fill: #fff;
@@ -664,175 +655,103 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.our_clients .clients_list .client_list_logo:hover,
-.our_clients .clients_list .client_list_logo:focus {
+.our_clients .clients_list .client_list_logo:hover, .our_clients .clients_list .client_list_logo:focus {
   border: 1px solid #2196f3;
   fill: #2196f3;
 }
 
-.modal_container {
+.backdrop {
   position: fixed;
-  height: 100%;
   width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
-  z-index: 10;
-}
-.modal_container.in .modal_space {
-  background: rgba(0, 0, 0, 0);
-  -webkit-animation: apperIn 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
-  animation: apperIn 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
-}
-.modal_container.in .modal_space .modal {
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 0.5s, visibility 0.5s, scale 0.5s;
   -webkit-animation: slideIn 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
-  animation: slideIn 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+          animation: slideIn 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  z-index: 15;
 }
-.modal_container.out {
-  -webkit-animation: ScaleDown 0s 1s linear forwards;
-  animation: ScaleDown 0s 1s linear forwards;
-}
-.modal_container.out .modal_space {
-  -webkit-animation: apperOut 1s cubic-bezier(0.23, 1, 0.32, 1) forwards;
-  animation: apperOut 1s cubic-bezier(0.23, 1, 0.32, 1) forwards;
-}
-.modal_container.out .modal_space .modal {
-  -webkit-animation: slideOut 1s cubic-bezier(0.23, 1, 0.32, 1) forwards;
-  animation: slideOut 1s cubic-bezier(0.23, 1, 0.32, 1) forwards;
-}
-
-.is_hidden {
-  display: none;
-}
-
-.modal_space {
-  position: fixed;
-  left: 0;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  z-index: 12;
-  background: rgba(0, 0, 0, 0.3);
-}
-.modal_space .modal {
+.backdrop-modal {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 528px;
-  min-height: 581px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  background-color: #fff;
+  min-height: 518px;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
 }
-.modal_space .modal button[type="button"] {
+.backdrop-modal-close-btn {
   position: absolute;
   top: 8px;
   right: 8px;
   width: 30px;
   height: 30px;
-  background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1019607843);
   cursor: pointer;
+  transition-property: background-color, cursor, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop-modal-close-btn:hover, .backdrop-modal-close-btn:focus {
+  background-color: rgb(241, 241, 248);
 }
 
-@-webkit-keyframes apperIn {
-  0% {
-    background: rgba(0, 0, 0, 0);
-  }
-  100% {
-    background: rgba(0, 0, 0, 0.7);
-  }
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  -webkit-animation: slideOut 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+          animation: slideOut 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
 }
 
-@keyframes apperIn {
-  0% {
-    background: rgba(0, 0, 0, 0);
-  }
-  100% {
-    background: rgba(0, 0, 0, 0.7);
-  }
-}
-@-webkit-keyframes apperOut {
-  0% {
-    background: rgba(0, 0, 0, 0.7);
-  }
-  100% {
-    background: rgba(0, 0, 0, 0);
-  }
-}
-@keyframes apperOut {
-  0% {
-    background: rgba(0, 0, 0, 0.7);
-  }
-  100% {
-    background: rgba(0, 0, 0, 0);
-  }
-}
 @-webkit-keyframes slideIn {
   0% {
-    transform: translateX(-1500px) scaleX(1);
+    transform: translateX(-1000px) scale(0.75);
   }
   70% {
-    transform: translateX(30px) scalex(0, 9);
+    transform: translateX(-50%, -50%) scale(0.9);
   }
   100% {
-    transform: translateX(0px) scalex(1);
+    transform: translateX(-50%, -50%) scale(1);
   }
 }
+
 @keyframes slideIn {
   0% {
-    transform: translateX(-1500px) scaleX(1);
+    transform: translateX(-1000px) scale(0.75);
   }
   70% {
-    transform: translateX(30px) scalex(0, 9);
+    transform: translateX(-50%, -50%) scale(0.9);
   }
   100% {
-    transform: translateX(0px) scalex(1);
-  }
-}
-@-webkit-keyframes ScaleDown {
-  0% {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0);
-  }
-}
-@keyframes ScaleDown {
-  0% {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0);
+    transform: translateX(-50%, -50%) scale(1);
   }
 }
 @-webkit-keyframes slideOut {
   0% {
-    transform: translateX(0px) scaleX(1);
+    transform: translatex(0px) scale(1);
   }
   30% {
-    transform: translateX(-30px) scale(1.1);
+    transform: translatex(-30px) scale(0.9);
   }
   100% {
-    transform: translateX(1500px) scale(0);
+    transform: translatex(1500px), scale(0.75);
   }
 }
 @keyframes slideOut {
   0% {
-    transform: translateX(0px) scaleX(1);
+    transform: translatex(0px) scale(1);
   }
   30% {
-    transform: translateX(-30px) scale(1.1);
+    transform: translatex(-30px) scale(0.9);
   }
   100% {
-    transform: translateX(1500px) scale(0);
+    transform: translatex(1500px), scale(0.75);
   }
 }
 body {
@@ -858,4 +777,4 @@ p {
   width: 1200px;
   margin: auto;
   padding: 0 15px;
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,84 @@
+// okno modalne z animacją
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: $backgroundColorBackdrop;
+  //  z samym transition bez animation okno modalne pojawia się stopniowo na środku
+  transition: opacity 0.5s, visibility 0.5s, scale 0.5s;
+  // z animation okno modalne wykonuje animację SlideIn na końcu wracając do poycji bazowej na środku
+  animation: slideIn 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  z-index: 15;
+  &-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    min-height: 518px;
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: $backgroundColorBackdropModal;
+    &-close-btn {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: $backgroundColorBackdropModal;
+      border: 1px solid $borderColorCloseBtnBackdropModal;
+      cursor: pointer;
+      transition-property: background-color, cursor, border;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover,
+      &:focus {
+        background-color: $borderColorCloseBtnBackdropModalHover;
+      }
+    }
+  }
+}
+// odwołanie do skrypu js na końcu html
+// <script src="./js/modal2.js"></script>
+// dodaje wywołanie okna modalnego z formularzem zgłoszeniowym
+// okno modalne otwiera się po kliknięciu w button "Zamów usługę".
+// Aby script działał, musimy dodać specjalne atrybuty do znaczników HTML,
+// po których skrypt wyszukuje lementy:
+// data-modal-open - do przycisku otwierania okna modalnego.
+// data-modal-close - do przycisku zamykania okna modalnego.
+// data-modal - do backdrop okna modalnego
+// sam script usuwa i dodaje klasę o nazwie
+// .is-hidden
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  animation: slideOut 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-1000px) scale(0.75);
+  }
+  70% {
+    transform: translateX(-50%, -50%) scale(0.9);
+  }
+  100% {
+    transform: translateX(-50%, -50%) scale(1);
+  }
+}
+@keyframes slideOut {
+  0% {
+    transform: translatex(0px) scale(1);
+  }
+  30% {
+    transform: translatex(-30px) scale(0.9);
+  }
+  100% {
+    transform: translatex(1500px), scale(0.75);
+  }
+}

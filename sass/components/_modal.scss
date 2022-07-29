@@ -42,6 +42,9 @@
   z-index: 12;
   background: rgba(0, 0, 0, 0.3);
   .modal {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     position: absolute;
     width: 528px;
     min-height: 581px;
@@ -58,6 +61,28 @@
       border: 1px solid rgba(0, 0, 0, 0.1);
       border-radius: 50px;
       cursor: pointer;
+    }
+    .modal-title {
+      width: 448px;
+      height: 23px;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1.15;
+      text-align: center;
+      letter-spacing: 0.03em;
+      margin-top: 40px;
+    }
+    .modal-order-form {
+      position: absolute;
+      top: 75px;
+      left: 40px;
+      display: flex;
+      flex-direction: column;
+      width: 448px;
+      height: 342px;
+      &-lable {
+        width: 100%;
+      }
     }
   }
 }
