@@ -667,9 +667,9 @@
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity 0.5s, visibility 0.5s, scale 0.5s;
-  -webkit-animation: slideIn 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
-          animation: slideIn 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  transition: opacity 750ms, visibility 750ms, scale 750ms;
+  -webkit-animation: slideIn 750ms cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+          animation: slideIn 750ms cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
   z-index: 15;
 }
 .backdrop-modal {
@@ -705,8 +705,8 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  -webkit-animation: slideOut 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
-          animation: slideOut 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+  -webkit-animation: slideOut 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+          animation: slideOut 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
 }
 
 @-webkit-keyframes slideIn {
@@ -734,24 +734,24 @@
 }
 @-webkit-keyframes slideOut {
   0% {
-    transform: translatex(0px) scale(1);
+    transform: translateX(0px) scale(1);
   }
   30% {
-    transform: translatex(-30px) scale(0.9);
+    transform: translateX(40%, 10%) scale(0.9);
   }
   100% {
-    transform: translatex(1500px), scale(0.75);
+    transform: translateX(1500px) scale(0.75);
   }
 }
 @keyframes slideOut {
   0% {
-    transform: translatex(0px) scale(1);
+    transform: translateX(0px) scale(1);
   }
   30% {
-    transform: translatex(-30px) scale(0.9);
+    transform: translateX(40%, 10%) scale(0.9);
   }
   100% {
-    transform: translatex(1500px), scale(0.75);
+    transform: translateX(1500px) scale(0.75);
   }
 }
 body {

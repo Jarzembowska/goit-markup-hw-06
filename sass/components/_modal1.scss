@@ -7,9 +7,9 @@
   left: 0;
   background-color: $backgroundColorBackdrop;
   //  z samym transition bez animation okno modalne pojawia się stopniowo na środku
-  transition: opacity 0.5s, visibility 0.5s, scale 0.5s;
+  transition: opacity 750ms, visibility 750ms, scale 750ms;
   // z animation okno modalne wykonuje animację SlideIn na końcu wracając do poycji bazowej na środku
-  animation: slideIn 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  animation: slideIn 750ms cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
   z-index: 15;
   &-modal {
     position: absolute;
@@ -57,7 +57,7 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  animation: slideOut 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+  animation: slideOut 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
 }
 
 @keyframes slideIn {
@@ -73,12 +73,12 @@
 }
 @keyframes slideOut {
   0% {
-    transform: translatex(0px) scale(1);
+    transform: translateX(0px) scale(1);
   }
   30% {
-    transform: translatex(-30px) scale(0.9);
+    transform: translateX(40%, 10%) scale(0.9);
   }
   100% {
-    transform: translatex(1500px), scale(0.75);
+    transform: translateX(1500px) scale(0.75);
   }
 }
