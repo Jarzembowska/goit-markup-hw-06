@@ -8,7 +8,7 @@
   background-color: $backgroundColorBackdrop;
   //  z samym transition bez animation okno modalne pojawia się stopniowo na środku
   transition: opacity 750ms, visibility 750ms, scale 750ms;
-  // z animation okno modalne wykonuje animację SlideIn na końcu wracając do poycji bazowej na środku
+  // z animation okno modalne wykonuje animację SlideIn na końcu wracając do pozycji bazowej na środku
   animation: slideIn 750ms cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
   z-index: 15;
   &-modal {
@@ -17,13 +17,14 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 528px;
-    min-height: 518px;
+    min-height: 581px;
     border-radius: 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     background-color: $backgroundColorBackdropModal;
     &-close-btn {
       position: absolute;
+      margin: 0;
       top: 8px;
       right: 8px;
       width: 30px;

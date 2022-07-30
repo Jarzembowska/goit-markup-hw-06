@@ -467,9 +467,60 @@
   </div> -->
 
   <!-- modal bez zmiany script  -->
-  <div class="backdrop is-hidden" data-modal>
+  <div class="backdrop is_hidden" data-modal>
     <div class="backdrop-modal">
       <button type="button" class="backdrop-modal-close-btn" data-modal-close>x</button>
+      <div class="backdrop-modal-order">
+        <form name="order-user-form" method="get">
+
+          <lable for="order-user-full-name" class="backdrop-modal-order-lable1">
+            <p>Imie</p>
+            <svg width="18" height="18" viewBox="0 0 18 18">
+              <use xlink:href="./images/icons.svg#icon-person-black-18dp">
+              </use>
+            </svg>
+
+            <input type="txt" name="order-user-full-name" id="order-user-full-name"
+              class="backdrop-modal-order-lable1-name" />
+          </lable>
+
+
+          <lable for="order-user-phone" class="backdrop-modal-order-lable2">
+            <p>Telefon</p>
+
+            <svg width="18" height="18" viewBox="0 0 18 18">
+              <use xlink:href="./images/icons.svg#icon-phone-black-18dp">
+              </use>
+            </svg>
+            <input type="phone" name="order-user-phone" id="order-user-phone"
+              class="backdrop-modal-order-lable2-phone" />
+
+          </lable>
+
+
+          <lable for="order-user-email" class="backdrop-modal-order-lable3">
+
+            <p>E-mail</p>
+            <svg width="18" height="18" viewBox="0 0 18 18" class="svg-name">
+              <use xlink:href="./images/icons.svg#icon-email-black-18dp">
+              </use>
+            </svg>
+            <input type="email" name="order-user-email" id="order-user-email"
+              class="backdrop-modal-order-lable3-email" />
+
+          </lable>
+
+          <lable for="order-user-comment" class="backdrop-modal-order-lable4">
+            <p>Komentarz</p>
+
+            <textarea type="textarea" name="order-user-comment" id="order-user-comment" placeholder="Wprowadź tekst"
+              class="backdrop-modal-order-lable4-comment"></textarea>
+          </lable>
+          <!-- <button type="submit" class="order-form-button">
+            Wyślij
+          </button>  -->
+        </form>
+      </div>
     </div>
   </div>
   <script src="./js/modal1.js"></script>
