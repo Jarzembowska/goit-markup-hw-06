@@ -62,4 +62,25 @@
       }
     }
   }
+  &-agreement {
+    display: flex;
+    justify-content: center;
+    &-check {
+      input {
+        position: relative;
+      }
+      svg {
+        position: absolute;
+      }
+    }
+    label {
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      color: $colorBackdropModalAgreementText;
+      a {
+        color: $colorBackdropModalAgreementLink;
+      }
+    }
+  }
 }

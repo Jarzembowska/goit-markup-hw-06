@@ -834,6 +834,25 @@
 .backdrop-modal-order-box-items textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
+.backdrop-modal-order-agreement {
+  display: flex;
+  justify-content: center;
+}
+.backdrop-modal-order-agreement-check input {
+  position: relative;
+}
+.backdrop-modal-order-agreement-check svg {
+  position: absolute;
+}
+.backdrop-modal-order-agreement label {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.backdrop-modal-order-agreement label a {
+  color: #2196f3;
+}
 
 body {
   font-family: "Roboto", "Raleway", sans-serif;
