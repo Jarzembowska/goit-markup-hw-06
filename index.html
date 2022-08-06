@@ -483,11 +483,11 @@
   </div> -->
 
   <!-- modal bez zmiany script  -->
-  <div class="backdrop is_hidden" data-modal>
+  <div class="backdrop is-hidden" data-modal>
     <div class="backdrop-modal">
       <div class="backdrop-modal-close-btn">
         <svg width="18" height="18" viewBox="0 0 18 18" class="backdrop-modal-close-btn-icon" data-modal-close>
-          <use xlink:href="./images/icons.svg#icon-close-black-18dp-2-1">
+          <use xlink:href="./images/icons.svg#icon-close-black">
           </use>
         </svg>
       </div>
@@ -531,13 +531,22 @@
             <li class="backdrop-modal-order-agreement">
               <div class="backdrop-modal-order-agreement-check">
                 <input type="checkbox" name="order-user-agreement" value="agreement" id="agreement" />
-                <svg class="order-icon" width="18" height="18" viewBox="0 0 18 18">
-                  <use xlink:href="./images/icons.svg#icon-email-black-18dp">
+                <svg class="agreement-icon" width="16" height="15" viewBox="0 0 16 15">
+                  <use xlink:href="./images/icons.svg#icon-check">
                   </use>
                 </svg>
-
+                <label for="agreement">
+                  Oświadczam, iż akceptuję
+                  <a href="#" class="backdrop-modal-order-agreement-link">Regulamin</a>
+                  <span>i</span>
+                  <a href="#" class="backdrop-modal-order-agreement-link">Politykę Prywatności.</a>
+                </label>
               </div>
-
+            </li>
+            <li class="backdrop-modal-order-send">
+              <button type="submit">
+                Wyślij
+              </button>
             </li>
           </ul>
         </form>
