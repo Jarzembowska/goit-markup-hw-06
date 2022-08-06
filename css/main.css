@@ -614,7 +614,7 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer .subscribe-to-the-newsletter-form-box button-icon {
+.footer .subscribe-to-the-newsletter-form-box button svg {
   position: absolute;
   left: 148px;
   top: 13px;

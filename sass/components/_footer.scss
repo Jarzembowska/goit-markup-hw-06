@@ -117,7 +117,6 @@
     &-form {
       &-box {
         display: flex;
-
         input {
           width: 358px;
           height: 50px;
@@ -162,7 +161,7 @@
             box-shadow;
           transition-duration: 250ms;
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          &-icon {
+          svg {
             position: absolute;
             left: 148px;
             top: 13px;
