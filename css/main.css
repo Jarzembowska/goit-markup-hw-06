@@ -567,11 +567,10 @@
   text-transform: uppercase;
   color: #ffffff;
 }
-.footer .subscribe-to-the-newsletter-label {
-  display: inline-flex;
-  gap: 14px;
+.footer .subscribe-to-the-newsletter-form-box {
+  display: flex;
 }
-.footer .subscribe-to-the-newsletter-label-email {
+.footer .subscribe-to-the-newsletter-form-box-email {
   width: 358px;
   height: 50px;
   font-size: 16px;
@@ -582,28 +581,30 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   padding-left: 16px;
+  margin-right: 12px;
   transition-property: background-color, border, filter, border-radius;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer .subscribe-to-the-newsletter-label-email:focus {
+.footer .subscribe-to-the-newsletter-form-box-email:focus {
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 5px;
 }
-.footer .subscribe-to-the-newsletter-label-save {
+.footer .subscribe-to-the-newsletter-form-box-save {
+  position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
+  align-items: center;
+  padding-left: 42px;
   width: 200px;
   height: 50px;
   background-color: #2196f3;
+  color: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
-  color: #ffffff;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -613,15 +614,17 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer .subscribe-to-the-newsletter-label-save svg {
-  margin-left: 24px;
+.footer .subscribe-to-the-newsletter-form-box-save .newsletter-icon {
+  position: absolute;
+  left: 148px;
+  top: 13px;
   fill: #ffffff;
 }
-.footer .subscribe-to-the-newsletter-label-save:focus {
+.footer .subscribe-to-the-newsletter-form-box-save:focus, .footer .subscribe-to-the-newsletter-form-box-save:hover {
   border-radius: 5px;
-  background-color: #2196f3;
-  color: #ffffff;
-  fill: #ffffff;
+  background-color: #1891f3;
+  color: #f3ebeb;
+  fill: #f3ebeb;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
