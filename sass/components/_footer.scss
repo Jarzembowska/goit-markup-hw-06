@@ -162,18 +162,16 @@
             box-shadow;
           transition-duration: 250ms;
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          .newsletter-icon {
+          &-icon {
             position: absolute;
             left: 148px;
             top: 13px;
             fill: $colorSubscribeNewsletterButtonSave;
             transition-property: fill;
             transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           }
-
-          &:focus,
-          &:hover {
+          &:hover,
+          &:focus {
             border-radius: 5px;
             background-color: $backgroundColorSubscribeNewsletterButtonSaveHover;
             color: $colorSubscribeNewsletterButtonSaveHover;
