@@ -693,13 +693,17 @@
   border-radius: 50%;
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1019607843);
-  cursor: pointer;
-  transition-property: background-color, cursor, border;
+  transition-property: background-color, fill, cursor;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubick-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+.backdrop-modal-close-btn-icon {
+  margin: 5px 5px 5px 5px;
 }
 .backdrop-modal-close-btn:hover, .backdrop-modal-close-btn:focus {
-  background-color: rgb(241, 241, 248);
+  background-color: #2196f3;
+  fill: white;
 }
 
 .is-hidden {
@@ -755,98 +759,74 @@
     transform: translateX(1500px) scale(0.75);
   }
 }
-.backdrop-modal-order {
-  position: relative;
-  top: 75px;
-  left: 40px;
-  border: 1px solid green;
-  width: 448px;
-  height: 342px;
+.backdrop-modal-order-title {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-bottom: 12px;
+  width: 448px;
+  height: 23px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
-.backdrop-modal-order p {
+.backdrop-modal-order-box {
+  margin: 12px 40px 12px 40px;
+}
+.backdrop-modal-order-box-items {
+  position: relative;
+  margin-bottom: 10px;
+}
+.backdrop-modal-order-box-items input,
+.backdrop-modal-order-box-items label,
+.backdrop-modal-order-box-items textarea {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+.backdrop-modal-order-box-items label {
   font-size: 12px;
   line-height: 1.17;
+  letter-spacing: 0.01em;
   color: #757575;
 }
-.backdrop-modal-order-lable1 {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 58px;
-}
-.backdrop-modal-order-lable1 svg {
-  position: absolute;
-  left: 12px;
-  top: 23px;
-}
-.backdrop-modal-order-lable1-name {
+.backdrop-modal-order-box-items input {
   width: 100%;
   height: 40px;
-  margin-bottom: 10px;
-  padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  margin-top: 4px;
+  padding-left: 40px;
 }
-.backdrop-modal-order-lable2 {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 58px;
-}
-.backdrop-modal-order-lable2 svg {
-  position: absolute;
+.backdrop-modal-order-box-items .order-icon {
+  bottom: 11px;
   left: 12px;
-  top: 27px;
-  z-index: 20;
-}
-.backdrop-modal-order-lable2 svg:hover, .backdrop-modal-order-lable2 svg:focus {
-  fill: #2196f3;
-}
-.backdrop-modal-order-lable2-phone {
   position: absolute;
-  width: 100%;
-  height: 40px;
-  left: 0;
-  top: 16px;
-  margin-bottom: 10px;
-  padding-left: 42px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
 }
-.backdrop-modal-order-lable3 {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 58px;
-}
-.backdrop-modal-order-lable3 svg {
-  position: absolute;
-  left: 12px;
-  top: 23px;
-}
-.backdrop-modal-order-lable3-email {
-  width: 100%;
-  height: 40px;
-  margin-bottom: 10px;
-  padding-left: 42px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-}
-.backdrop-modal-order-lable4-comment {
+.backdrop-modal-order-box-items textarea {
   width: 100%;
   height: 120px;
-  padding-top: 11px;
-  padding-left: 12px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
+  resize: none;
+  padding: 12px 16px 12px 16px;
   font-size: 12px;
   line-height: 1.17;
-  color: #757575;
+  letter-spacing: 0.01em;
+  font-family: inherit;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-top: 4px;
+}
+.backdrop-modal-order-box-items textarea::-moz-placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+.backdrop-modal-order-box-items textarea:-ms-input-placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+.backdrop-modal-order-box-items textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
 }
 
 body {
