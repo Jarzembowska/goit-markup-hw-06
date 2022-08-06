@@ -569,6 +569,7 @@
 }
 .footer .subscribe-to-the-newsletter-form-box {
   display: flex;
+  flex-direction: row;
 }
 .footer .subscribe-to-the-newsletter-form-box input {
   width: 358px;
