@@ -791,6 +791,7 @@
 .backdrop-modal-order-box-items textarea {
   margin: 0;
   padding: 0;
+  display: block;
 }
 .backdrop-modal-order-box-items label {
   font-size: 12px;
@@ -806,13 +807,21 @@
   margin-top: 4px;
   padding-left: 40px;
 }
+.backdrop-modal-order-box-items .input-box,
+.backdrop-modal-order-box-items .order-icon {
+  outline: none;
+}
+.backdrop-modal-order-box-items .input-box:hover, .backdrop-modal-order-box-items .input-box:focus,
+.backdrop-modal-order-box-items .order-icon:hover,
+.backdrop-modal-order-box-items .order-icon:focus {
+  border-color: #2196f3;
+  fill: #2196f3;
+}
 .backdrop-modal-order-box-items svg {
   bottom: 11px;
   left: 12px;
   position: absolute;
-}
-.backdrop-modal-order-box-items input:checked + svg {
-  fill: #2196f3;
+  outline: none;
 }
 .backdrop-modal-order-box-items textarea {
   width: 100%;
@@ -827,6 +836,9 @@
   border-radius: 4px;
   margin-top: 4px;
 }
+.backdrop-modal-order-box-items textarea:hover, .backdrop-modal-order-box-items textarea:focus-within {
+  border-color: #2196f3;
+}
 .backdrop-modal-order-box-items textarea::-moz-placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
@@ -836,18 +848,51 @@
 .backdrop-modal-order-box-items textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
+.backdrop-modal-order-box-items .textarea-box {
+  outline: none;
+}
+.backdrop-modal-order-box-items .textarea-box:hover, .backdrop-modal-order-box-items .textarea-box:focus-within {
+  border-color: #2196f3;
+}
 .backdrop-modal-order-agreement {
   display: flex;
+  justify-content: center;
   margin-top: 20px;
   margin-bottom: 30px;
 }
 .backdrop-modal-order-agreement-check {
   display: flex;
+  align-items: center;
+  position: relative;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 3px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.backdrop-modal-order-agreement-check:hover, .backdrop-modal-order-agreement-check:focus-within {
+  border-color: #2196f3;
 }
 .backdrop-modal-order-agreement-check input {
+  position: absolute;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+  margin-right: 8px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 16px;
+}
+.backdrop-modal-order-agreement-check svg {
+  position: absolute;
+  fill: none;
+  margin-right: 8px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .backdrop-modal-order-agreement-check input:checked + svg {
   fill: #2196f3;
