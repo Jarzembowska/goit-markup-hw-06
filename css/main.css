@@ -761,7 +761,7 @@
   transition-property: fill;
   transition-duration: 250ms;
 }
-.subscribe-to-the-newsletter-form-box button:hover, .subscribe-to-the-newsletter-form-box button:focus {
+.subscribe-to-the-newsletter-form-box button:hover, .subscribe-to-the-newsletter-form-box button:focus, .subscribe-to-the-newsletter-form-box button:focus-within {
   border-radius: 5px;
   background-color: #0d83e4;
   color: #f3ebeb;
