@@ -453,21 +453,21 @@
         <!-- możemy tutaj ustawić również  -->
         <!-- novalidate - ten formularz nie będzie wówczas walidowany  -->
         <!-- autocomplete="off" przeglądarka nie będzie podpowiadała nam jaką wartość możemy wstawić np email który stosowaliśmy u siebie , zazwyczaj jednak nie ustawia się tego-->
-        <form method="get">
-          <ul class="subscribe-to-the-newsletter-form">
-            <li class="subscribe-to-the-newsletter-form-box">
-              <label for="subscribe-to-the-newsletter"></label>
-              <input type="email" name="email-newsletter" placeholder="E-mail"
-                class="subscribe-to-the-newsletter-form-box-email" id="subscribe-to-the-newsletter" />
-              <button type="submit" class="subscribe-to-the-newsletter-form-box-save">
-                Zapisz się
-                <svg width="24" height="24" viewBox="0 0 24 24">
-                  <use xlink:href="./images/icons.svg#icon-icon-send">
-                  </use>
-                </svg>
-              </button>
-            </li>
-          </ul>
+        <form class="subscribe-to-the-newsletter-form" method="get">
+          <div class="subscribe-to-the-newsletter-form-box">
+            <label for="subscribe-to-the-newsletter">
+              <input type="email" name="newsletter-email" placeholder="E-mail"
+                class="subscribe-to-the-newsletter-form-box-email" id="subscribe-to-the-newsletter" required
+                pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" />
+            </label>
+            <button type="submit" class="subscribe-to-the-newsletter-form-box-save">
+              Zapisz się
+              <svg width="24" height="24" viewBox="0 0 24 24">
+                <use xlink:href="./images/icons.svg#icon-icon-send">
+                </use>
+              </svg>
+            </button>
+          </div>
         </form>
       </div>
     </div>
@@ -501,41 +501,45 @@
         <form>
           <ul class="backdrop-modal-order-box">
             <li class="backdrop-modal-order-box-items">
-              <label for="order-user-full-name">Imię</label>
-              <input class="input-box" type="text" name="order-user-full-name" id="order-user-full-name" required
-                minlength="3" maxlength="20">
-              <svg class="order-icon" width="18" height="18" viewBox="0 0 18 18">
-                <use xlink:href="./images/icons.svg#icon-person-black-18dp">
-                </use>
-              </svg>
+              <label for="order-user-full-name">Imię
+                <input class="input-box" type="text" name="order-user-full-name" id="order-user-full-name" required
+                  minlength="3" maxlength="20">
+                <svg class="order-icon" width="18" height="18" viewBox="0 0 18 18">
+                  <use xlink:href="./images/icons.svg#icon-person-black-18dp">
+                  </use>
+                </svg>
+              </label>
             </li>
             <li class="backdrop-modal-order-box-items">
-              <label for="order-user-phone">Telefon</label>
-              <input class="input-box" type="tel" name="order-user-phone" id="order-user-phone" required minlength="9"
-                maxlength="12">
-              <svg class="order-icon" width="18" height="18" viewBox="0 0 18 18">
-                <use xlink:href="./images/icons.svg#icon-phone-black-18dp">
-                </use>
-              </svg>
+              <label for="order-user-phone">Telefon
+                <input class="input-box" type="tel" name="order-user-phone" id="order-user-phone" required minlength="9"
+                  maxlength="9">
+                <svg class="order-icon" width="18" height="18" viewBox="0 0 18 18">
+                  <use xlink:href="./images/icons.svg#icon-phone-black-18dp">
+                  </use>
+                </svg>
+              </label>
             </li>
             <li class="backdrop-modal-order-box-items">
-              <label for="order-user-email">E-mail</label>
-              <input class="input-box" type="email" name="order-user-email" id="order-user-email" required
-                minlength="7">
-              <svg class="order-icon" width="18" height="18" viewBox="0 0 18 18">
-                <use xlink:href="./images/icons.svg#icon-email-black-18dp">
-                </use>
-              </svg>
+              <label for="order-user-email">E-mail
+                <input class="input-box" type="email" name="order-user-email" id="order-user-email" required
+                  pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" />
+                <svg class="order-icon" width="18" height="18" viewBox="0 0 18 18">
+                  <use xlink:href="./images/icons.svg#icon-email-black-18dp">
+                  </use>
+                </svg>
+              </label>
             </li>
             <li class="backdrop-modal-order-box-items">
-              <label for="order-user-comment">Komentarz</label>
-              <textarea class="textarea-box" name="order-user-comment" id="order-user-comment"
-                placeholder="Wprowadź tekst" required></textarea>
+              <label for="order-user-comment">Komentarz
+                <textarea class="textarea-box" name="order-user-comment" id="order-user-comment"
+                  placeholder="Wprowadź tekst" required></textarea>
+              </label>
             </li>
             <li class="backdrop-modal-order-agreement">
               <div class="backdrop-modal-order-agreement-check">
-                <input class="backdrop-modal-order-agreement-check-input" type="checkbox" name="order-user-agreement"
-                  value="agreement" id="agreement" required />
+                <input class="input-checkbox" type="checkbox" name="order-user-agreement" value="agreement"
+                  id="agreement" required />
 
                 <svg class="agreement-icon" width="16" height="15" viewBox="0 0 16 15">
                   <use xlink:href="./images/icons.svg#icon-check">
@@ -557,29 +561,6 @@
             </li>
           </ul>
         </form>
-
-
-
-
-
-
-
-        <!-- 
-
-          <lable for="order-user-statement" class="backdrop-modal-order-lable5-statement">
-            <input type="checkbox" name="order-user-statement" value="order-user-statement" />
-            <span>Oświadczam iż akceptuję
-              <span>
-                <a href="#">Regulamin</a>
-              </span>
-              i
-              <span>
-                <a href="#">Politykę Prywatności</a>
-              </span>
-            </span>
-          </lable> -->
-
-
       </div>
     </div>
   </div>
